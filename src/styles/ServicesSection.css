@@ -1,0 +1,80 @@
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  overflow-x: hidden; /* Hides horizontal overflow */
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #004d40;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  transition: transform 0.5s, box-shadow 0.5s;
+  flex: 1 1 calc(33% - 2rem); /* Cards take up 33% of the container width */
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow */
+}
+
+.card:hover {
+  transform: scale(1.05) translateZ(10px); /* Slight zoom and 3D effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px; /* Curved square shape */
+  margin-bottom: 1rem;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .services-container {
+    flex-wrap: nowrap; /* Prevents wrapping to a new line on mobile */
+    overflow-x: auto; /* Enables horizontal scrolling on mobile */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile devices */
+  }
+
+  .card {
+    flex: 0 0 80%; /* Adjust width for mobile view */
+    margin-right: 1rem; /* Ensure gap between cards */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition for zoom effect */
+  }
+
+  .services-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for better UX */
+  }
+}
+
+/* Keyframes for zoom effect */
+@keyframes zoom-center {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply animation when card is in center */
+.card {
+  position: relative;
+}
+
+.card:active,
+.card:focus {
+  animation: zoom-center 0.5s ease-in-out;
+}

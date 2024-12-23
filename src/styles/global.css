@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+  color: #00695c;
+}
+
+nav {
+  background-color: #004d40;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+}
+
+nav ul li a:hover {
+  background-color: #388E3C; /* Darker shade of green for hover effect */
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #004d40;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
