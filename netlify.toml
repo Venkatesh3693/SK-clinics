@@ -2,5 +2,5 @@
   publish = "build/client"
 
 [context.production.environment]
-  NODE_VERSION = "14"
+  NODE_VERSION = "20"
   YARN_VERSION = "1.22.10"
