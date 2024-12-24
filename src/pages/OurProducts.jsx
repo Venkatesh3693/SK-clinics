@@ -49,7 +49,7 @@ const OurProducts = () => {
 
   const sendToWhatsApp = () => {
     const productList = cart.map((product) => product.name).join(', ');
-    const whatsappUrl = `https://wa.me/9003174634?text=${encodeURIComponent(`Product List: ${productList}`)}`;
+    const whatsappUrl = `https://wa.me/+919003174634?text=${encodeURIComponent(`Product List: ${productList}`)}`;
     window.open(whatsappUrl, '_blank');
     setCart([]); // Clear the cart after sending the message
   };
