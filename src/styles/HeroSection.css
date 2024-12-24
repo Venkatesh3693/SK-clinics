@@ -41,7 +41,7 @@
 /* Responsive styles */
 @media (max-width: 768px) {
   .hero-section {
-    background-size: contain; /* Ensure the entire image is visible on mobile */
+    background-position: right center; /* Center the right side of the image on mobile */
   }
 
   .hero-content h1 {
