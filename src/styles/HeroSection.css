@@ -40,6 +40,10 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  .hero-section {
+    background-size: contain; /* Ensure the entire image is visible on mobile */
+  }
+
   .hero-content h1 {
     font-size: 2rem; /* Adjust font size for mobile */
   }
