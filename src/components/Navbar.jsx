@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Navbar.css'; // Import the CSS file for styling
+import '../styles/Navbar.css'; 
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ const Navbar = () => {
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
         }
-        setIsOpen(false); // Close the menu after clicking
+        setIsOpen(false); 
     };
 
     return (

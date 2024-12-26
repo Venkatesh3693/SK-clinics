@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/ServicesSection.css'; // Import the CSS file for styling
+import '../styles/ServicesSection.css'; 
 
 const ServicesSection = () => {
   return (

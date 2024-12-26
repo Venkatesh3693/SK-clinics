@@ -67,9 +67,9 @@
   font-size: 1.5rem;
 }
 
-/* Responsive styles */
+
 @media (max-width: 600px) {
   .contact-options a span {
-    display: none; /* Hide text on mobile */
+    display: none; 
   }
 }

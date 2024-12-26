@@ -6,6 +6,7 @@ import OurProducts from './pages/OurProducts';
 import Home from './pages/Home';
 import './styles/global.css';
 
+
 const App = () => {
   return (
     <div>

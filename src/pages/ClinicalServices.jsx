@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/ClinicalServices.css'; // Import the CSS file for styling
+import '../styles/ClinicalServices.css'; 
 
 const services = [
   {
@@ -40,7 +40,7 @@ const ImageSlider = ({ images }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
+    }, 5000); 
 
     return () => clearInterval(interval);
   }, [images.length]);

@@ -17,17 +17,17 @@
   margin: 0.5rem 0;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
   .footer {
-    padding: 0.5rem; /* Adjust padding for mobile */
+    padding: 0.5rem; 
   }
 
   .footer-content {
-    padding: 0 1rem; /* Add padding to the sides for mobile */
+    padding: 0 1rem; 
   }
 
   .footer p {
-    font-size: 0.875rem; /* Adjust font size for mobile */
+    font-size: 0.875rem; 
   }
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/OurProducts.css'; // Import the CSS file for styling
+import '../styles/OurProducts.css'; 
 
 const products = [
   { id: 1, name: 'paracetamol', image: './paracetamol(1).jpg' },
@@ -51,13 +51,13 @@ const OurProducts = () => {
     const productList = cart.map((product) => product.name).join(', ');
     const whatsappUrl = `https://wa.me/+919003174634?text=${encodeURIComponent(`Product List: ${productList}`)}`;
     window.open(whatsappUrl, '_blank');
-    setCart([]); // Clear the cart after sending the message
+    setCart([]); 
   };
 
   return (
     <div>
       <div className="top-right">
-        {/* <button className="add-list-button">Add List</button> */}
+        
       </div>
       <h2>Shree Velan Medicals</h2>
       <h2>Our Products</h2>

@@ -66,7 +66,7 @@
   display: inline;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -74,10 +74,10 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: white; /* Set background color to white */
-    border-top: 1px solid #388E3C; /* Add a border to separate the dropdown */
-    z-index: 3; /* Ensure the dropdown is above other content */
-    padding: 0.5rem 0; /* Add some padding to the dropdown */
+    background-color: white; 
+    border-top: 1px solid #388E3C; 
+    z-index: 3; 
+    padding: 0.5rem 0; 
   }
 
   .nav-links.open {
@@ -85,18 +85,18 @@
   }
 
   .nav-links li {
-    margin: 0.5rem 0; /* Add more space between each text item */
-    width: auto; /* Ensure the width is only as wide as the text */
+    margin: 0.5rem 0; 
+    width: auto; 
   }
 
   .nav-links a {
-    width: auto; /* Ensure the width is only as wide as the text */
-    color: #004d40; /* Change text color to match the theme */
-    padding: 0.5rem 1rem; /* Add padding to the links */
+    width: auto; 
+    color: #004d40; 
+    padding: 0.5rem 1rem; 
   }
 
   .nav-links a:hover {
-    background-color: #e0f7fa; /* Light background color for hover effect */
+    background-color: #e0f7fa; 
   }
 
   .burger-menu {
@@ -104,6 +104,6 @@
   }
 
   .social-links span {
-    display: none; /* Hide text on mobile */
+    display: none; 
   }
 }

@@ -18,7 +18,7 @@
 .image-slider {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 100vh; 
   overflow: hidden;
   border-radius: 8px;
 }
@@ -36,9 +36,9 @@
   opacity: 1;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
   .image-slider {
-    height: 50vh; /* Adjust height for mobile view */
+    height: 50vh; 
   }
 }

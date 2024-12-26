@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   gap: 1rem;
-  overflow-x: hidden; /* Hides horizontal overflow */
+  overflow-x: hidden; 
 }
 
 .card {
@@ -12,14 +12,14 @@
   margin: 1rem;
   border-radius: 8px;
   transition: transform 0.5s, box-shadow 0.5s;
-  flex: 1 1 calc(33% - 2rem); /* Cards take up 33% of the container width */
+  flex: 1 1 calc(33% - 2rem); 
   box-sizing: border-box;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .card:hover {
-  transform: scale(1.05) translateZ(10px); /* Slight zoom and 3D effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.05) translateZ(10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .card h3 {
@@ -33,30 +33,30 @@
 .service-image {
   width: 100%;
   height: auto;
-  border-radius: 15px; /* Curved square shape */
+  border-radius: 15px; 
   margin-bottom: 1rem;
 }
 
-/* Media query for mobile devices */
+
 @media (max-width: 768px) {
   .services-container {
-    flex-wrap: nowrap; /* Prevents wrapping to a new line on mobile */
-    overflow-x: auto; /* Enables horizontal scrolling on mobile */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile devices */
+    flex-wrap: nowrap; 
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
   }
 
   .card {
-    flex: 0 0 80%; /* Adjust width for mobile view */
-    margin-right: 1rem; /* Ensure gap between cards */
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition for zoom effect */
+    flex: 0 0 80%; 
+    margin-right: 1rem; 
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
   }
 
   .services-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for better UX */
+    display: none; 
   }
 }
 
-/* Keyframes for zoom effect */
+
 @keyframes zoom-center {
   0% {
     transform: scale(1);
@@ -69,7 +69,7 @@
   }
 }
 
-/* Apply animation when card is in center */
+
 .card {
   position: relative;
 }
