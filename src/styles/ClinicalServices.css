@@ -36,7 +36,7 @@
   opacity: 1;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
   .image-slider {
     height: 50vh; /* Adjust height for mobile view */
