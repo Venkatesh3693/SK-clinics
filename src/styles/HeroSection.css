@@ -38,6 +38,35 @@
   font-size: 1.5rem;
 }
 
+.plus-symbol {
+  position: absolute;
+  font-size: 2rem;
+  color: transparent;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.plus-symbol.blue {
+  color: transparent;
+}
+
+.plus-symbol.green {
+  color: transparent;
+}
+
+.hero-section:hover .plus-symbol {
+  color: #000;
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.hero-section:hover .plus-symbol.blue {
+  color: blue;
+  transform: scale(1.5);
+}
+
+.hero-section:hover .plus-symbol.green {
+  color: green;
+  transform: scale(1.5);
+}
 
 @media (max-width: 768px) {
   .hero-section {

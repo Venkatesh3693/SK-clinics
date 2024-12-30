@@ -67,9 +67,48 @@
   font-size: 1.5rem;
 }
 
+.reach-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensure the button is centered vertically */
+  margin-top: 20px;
+}
+
+.reach-us-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reach-us-button:hover {
+  background-color: #0056b3;
+}
 
 @media (max-width: 600px) {
   .contact-options a span {
     display: none; 
+  }
+  .reach-us-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
